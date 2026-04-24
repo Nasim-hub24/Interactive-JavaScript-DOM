@@ -20,9 +20,38 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JS</li>
+            <li>NODE JS</li>
         </ul>
     </main>
 
-    <script src="js/connect.js"></script>
+    <script>
+        const student ={
+            name : 'abul mia',
+            id : 234,
+            age: 34,
+
+            study: function(subject){
+                console.log('studying subject: ', subject);
+            }
+        }
+
+        const licollection = document.getElementsByTagName('li');
+        console.log(licollection);
+        for(const li of licollection){
+            console.log(li.innerText);
+        }
+
+        // all heading
+        const allheading = document.getElementsByTagName('h1');
+        console.log(allheading);
+        for(const heading of allheading )
+        {
+            console.log(heading.innerText);
+        }
+    </script>
+
+    <script src="js/connect.js">
+
+    </script>
 </body>
 </html>
