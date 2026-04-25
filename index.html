@@ -7,6 +7,13 @@
 
     <!-- connect css -->
      <link rel="stylesheet" href="style/styles.css">
+
+     <!-- css style -->
+      <style>
+        #foodtitle{
+            color: indianred;
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -22,7 +29,24 @@
             <li>JS</li>
             <li>NODE JS</li>
         </ul>
+
+        <section>
+            <h1 id="foodtitle"> foods i love </h1>
+            <ul>
+
+                <lI>fish</lI>
+                <lI>rice</lI>
+                <lI>dal</lI>
+                <lI>panir</lI>
+                <lI>fry</lI>
+                <lI>murga</lI>
+                <lI>murgi</lI>
+
+            </ul>
+        </section>
     </main>
+
+
 
     <script>
         const student ={
@@ -31,23 +55,29 @@
             age: 34,
 
             study: function(subject){
-                console.log('studying subject: ', subject);
+                //console.log('studying subject: ', subject);
             }
         }
 
         const licollection = document.getElementsByTagName('li');
-        console.log(licollection);
+        //console.log(licollection);
         for(const li of licollection){
-            console.log(li.innerText);
+            //console.log(li.innerText);
         }
 
         // all heading
         const allheading = document.getElementsByTagName('h1');
-        console.log(allheading);
+        //console.log(allheading);
         for(const heading of allheading )
         {
-            console.log(heading.innerText);
+            //console.log(heading.innerText);
         }
+
+        // get element by id
+        const food = document.getElementById('foodtitle')
+        console.log(food.innerText);
+        food.innerText = 'food i love to eat that makes me healthy'
+
     </script>
 
     <script src="js/connect.js">
