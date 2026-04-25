@@ -19,3 +19,11 @@ for(const list of names)
     list.style.color = 'blue'
 }
 
+const food = document.getElementById('kani')
+console.log(food.innerText)
+food.innerText = 'food is everything'
+food.style.backgroundColor ='green'
+food.style.borderRadius = '20px'
+food.style.padding = '10px'
+food.style.color = 'yellow'
+
