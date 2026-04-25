@@ -75,9 +75,20 @@
         }
 
         // get element by id
+        
+        
         const food = document.getElementById('foodtitle')
         console.log(food.innerText);
-        food.innerText = 'food that makes me healthy'
+        food.innerText = 'food for ever'
+
+        // for styling using js
+        food.style.color = 'blue'
+        food.style.backgroundColor = 'lightgreen'
+        food.style.borderRadius = '10px'
+        food.style.padding = '10px'
+        
+        // get the title and atribute
+        food.getAttribute('class')
 
         const foreignelements = document.getElementsByClassName('elements')
         console.log(foreignelements);
