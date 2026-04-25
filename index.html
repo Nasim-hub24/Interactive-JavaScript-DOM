@@ -36,9 +36,10 @@
 
                 <lI>fish</lI>
                 <lI>rice</lI>
-                <lI>dal</lI>
-                <lI>panir</lI>
-                <lI>fry</lI>
+                <lI class="elements">dal</lI>
+                <lI class="elements" >panir</lI>
+                <lI class="elements" >panir</lI>
+                <lI class="elements">fry</lI>
                 <lI>murga</lI>
                 <lI>murgi</lI>
 
@@ -76,8 +77,15 @@
         // get element by id
         const food = document.getElementById('foodtitle')
         console.log(food.innerText);
-        food.innerText = 'food i love to eat that makes me healthy'
+        food.innerText = 'food that makes me healthy'
 
+        const foreignelements = document.getElementsByClassName('elements')
+        console.log(foreignelements);
+        for(const element of foreignelements)
+        {
+            console.log(element.innerText);
+        }
+        
     </script>
 
     <script src="js/connect.js">
