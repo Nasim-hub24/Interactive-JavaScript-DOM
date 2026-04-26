@@ -9,6 +9,8 @@
 
 console.log('external file');
 
+// OPTION NUMBER TWO TO HANDLE EVENTS
+
 // akta fuction banisi than HTML code a giay ONCLICK a function name ta bosi disi 
 function changebackground()
 {
@@ -19,4 +21,17 @@ function changebackground()
 function orderplace()
 {
     document.body.style.backgroundColor = 'yellow'
+}
+
+// OPTION NUMBER THREE (BEST)
+const change = document.getElementById('btn')
+change.onclick = function makeChange()
+{
+    document.body.style.backgroundColor = 'orange';
+}
+
+const card = document.getElementById('add')
+card.onclick = function yourCard()
+{
+    document.body.style.backgroundColor = 'gray';
 }
