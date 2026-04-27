@@ -35,3 +35,12 @@ card.onclick = function yourCard()
 {
     document.body.style.backgroundColor = 'gray';
 }
+
+// OPTION NUMBER FOUR MOSTLY USE
+
+document.getElementById('make-btn').addEventListener('click',
+    function purple ()
+    {
+        console.log('event handle success fully ');
+    }
+)
