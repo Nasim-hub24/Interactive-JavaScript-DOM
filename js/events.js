@@ -44,3 +44,10 @@ document.getElementById('make-btn').addEventListener('click',
         console.log('event handle success fully ');
     }
 )
+
+document.getElementById('teal-btn').addEventListener('click', 
+    function makeChange ()
+    {
+        document.body.style.backgroundColor = 'teal';
+    }
+)
